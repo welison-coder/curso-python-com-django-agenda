@@ -1,10 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render , redirect
 from core.models import Evento
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login , logout
 # Create your views here.
+
 def login_user(request):
     return render (request, 'login.html')
+
+def logout_user(request):
+    logout(request)
+    return redirect('/')
 
 def submit_login(request):
     if request.POST:
@@ -20,6 +25,7 @@ def submit_login(request):
 
 @login_required(login_url='/login/')
 def lista_eventos(request):
-    evento = Evento.objects.all()
+    usuario = request.user
+    evento = Evento.objects.filter(usuario=usuario)
     dados = {'eventos':evento}
     return render(request,'agenda.html', dados)
