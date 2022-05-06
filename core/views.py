@@ -33,3 +33,5 @@ def lista_eventos(request):
 @login_required(login_url='/login/')
 def evento(request):
     return render(request, 'evento.html')
+
+@login_required(login_url='/login/')..........

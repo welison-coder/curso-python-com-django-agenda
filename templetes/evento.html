@@ -3,14 +3,22 @@
 {% block content %}
 <div class="main-page">
         <div class="card-agenda" >
-            <div class="forms-evento">
-            <h2>Evento</h2>
-            <label>Título</label><br>
-                <input type="text" name="titulo"><br>
-                <label>Data do Evento</label><br>
-                <input type="datetime-local" name="data_evento"><br>
-                <label>Descrição</label><br>
-                <textarea rows="5" cols="24" name="descricao"></textarea>
+            <div class="textfiald">
+                <div class="forms-evento">
+                    <h2>Evento</h2>
+                    <form action="submit" method="POST">
+                        <label>Título</label><br>
+                        <input type="text" name="titulo"><br>
+                        <label>Data do Evento</label><br>
+                        <input type="datetime-local" name="data_evento"><br>
+                        <label>Descrição</label><br>
+                        <textarea rows="5" cols="50" name="descricao"></textarea>
+                        <button type="submit">Salvar</button>
+                        <a href="/">
+                            <button type="button">Cancelar</button>
+                        </a>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
