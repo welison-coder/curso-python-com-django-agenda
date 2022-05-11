@@ -33,5 +33,10 @@
         </div>
     </div>
     </div>
+    <div class="erro">
+    {% for message in messages %}
+        <strong class="erro">ERRO: </strong> {{message}}
+    {% endfor %}
+    </div>
 </body>
 </html>

@@ -1,7 +1,14 @@
+
+.main-page{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-agenda{
-    width: 40vw;
-    height: 100vh;
-    margin: 100px 450px;
+    width: 50vw;
+    height: 60vh;
+    margin:px 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,19 +23,27 @@
      display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     margin: 0px;
 }
 .forms-evento > input{
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0px;
+
 }
 
 .textfiald{
     width: 30vw;
     height: 50vh;
+
 }
+
+textarea{
+    display:flex;
+    width:30vw;
+    justify-content: center;
+}
+
 

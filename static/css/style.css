@@ -118,26 +118,8 @@ body {
     filter: drop-shadow(15px 10px 5px rgba(128, 198, 211, 0.5));
 }
 
-.btn-cadastro{
-    width: 80%;
-    padding: 16px 0px;
-    border: none;
-    border-radius: 10px;
-    background: #77ffc0;
-    justify-items: center;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #2f2841;
-    box-shadow:  0PX 10PX 40PX #00000056;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 15px;
-}
-
-.btn-cadastro:hover{
-    background-color: aqua;
-    transition: all 0.5s;
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(128, 198, 211, 0.5));
+.erro{
+    backgroud:green;
+     height: 60vh; color:white;
+    position:relative;
 }
