@@ -10,10 +10,14 @@
             <h2>Agendamentos</h2>
             <ol style="font-size: 18px padding: nane;">
             {% for evento in eventos %}
-                <p>{{evento.titulo}} - {{evento.get_data_evento}}<br>
-                    <a href="evento/?id={{evento.id}}"><button class="editar">editar</button></a>
-                    <a href="evento/delete/{{evento.id}}/"><button class="excluir">excluir</button></a>
-                </p>
+                <div style= {% if evento.get_evento_atrasado %}
+                            "color:red"
+                            {% endif %} >
+                    <p>{{evento.titulo}} - {{evento.get_data_evento}}<br>
+                        <a href="evento/?id={{evento.id}}"><button class="editar">editar</button></a>
+                        <a href="evento/delete/{{evento.id}}/"><button class="excluir">excluir</button></a>
+                    </p>
+                </div>
             {% endfor%}
             </ol>
         </div>
